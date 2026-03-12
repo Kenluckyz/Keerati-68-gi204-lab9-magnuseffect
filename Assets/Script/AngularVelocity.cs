@@ -18,11 +18,11 @@ public class AngularVelocity : MonoBehaviour
     {
         if (Keyboard.current.aKey.isPressed)
         {
-            rb.angularVelocity = new Vector3(0, angularSpeed, 0);
+            rb.angularVelocity = new Vector3(0, 0, 0);
         }
         else
         {
-            rb.angularVelocity = Vector3.zero;
+            rb.angularVelocity = new Vector3(0, angularSpeed, 0);
         }
     }
 }
